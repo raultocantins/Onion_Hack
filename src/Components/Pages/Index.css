@@ -1,0 +1,72 @@
+.box{
+    height: 100px;
+    width: 100px;
+z-index: 1;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 50px;    
+    font-size: 15px;
+}
+
+
+.box-img{
+    height: 80%;
+    width: 100%;
+    
+}
+.box-title{
+height: 20%;
+width: 100%;
+}
+.box:hover{
+animation-name: loop;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+
+}
+.container-projects,.container-about,.container-contact,.container-opensource,.container-tutorials,.container-main{
+    animation-name: loop;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@media(max-width:600px){
+    .box{
+        height: 50px;
+        width: 50px;   
+        overflow: hidden;
+        padding: 20px;
+        border-radius: 50%;
+        margin: 15px; 
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes loop{
+    from{
+     
+opacity: 0.5;
+
+    }
+    to{
+      
+opacity: 1;
+
+    }
+}
