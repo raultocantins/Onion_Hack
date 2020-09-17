@@ -12,8 +12,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Projet from '../Assets/Untitled.svg'
-import Git from '../Assets/github.svg'
+import Projet from '../Assets/conceito.svg'
+import Git from '../Assets/git.svg'
+
 
 export default class Container extends React.Component {
   render() {
