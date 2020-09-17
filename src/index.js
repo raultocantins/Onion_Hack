@@ -2,14 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Admin from './Components/Admin'
 import * as serviceWorker from './serviceWorker';
 import {
-  BrowserRouter as Router 
+  BrowserRouter as Router,
+  Switch, Route
  } from "react-router-dom";
 
 ReactDOM.render(
   <Router>
-    <App />
+    <Switch>
+   <Route path='/admin'>
+<Admin/>
+   </Route>
+   <Route path='/' exact={true}>
+   <App />
+   </Route>
+    </Switch>
+  
+    
   </Router>,
   document.getElementById('root')
 );

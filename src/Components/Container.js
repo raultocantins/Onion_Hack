@@ -1,19 +1,25 @@
 import React from "react";
 import Box from '../Components/Box'
-import Onion from "../Assets/cebola.svg";
 import Relva from "../Assets/relva.svg";
 import Projects from '../Components/Pages/Projects'
 import About from '../Components/Pages/About'
 import Tutorials from '../Components/Pages/Tutorials'
 import OpenSource from '../Components/Pages/Opensource'
 import Contact from '../Components/Pages/Contact'
+import Hack from '../Components/Pages/Hacks'
 import {
    Switch,
   Route,
   Link
 } from "react-router-dom";
-import Projet from '../Assets/Untitled.svg'
-import Git from '../Assets/github.svg'
+import Project from '../Assets/project.svg'
+import Open from '../Assets/opensource.svg'
+import Tutor from '../Assets/tutorials.svg'
+import Contato from '../Assets/phone.svg'
+import Sobre from '../Assets/sobre.svg'
+import Hacks from '../Assets/hacks.svg'
+
+
 
 export default class Container extends React.Component {
   render() {
@@ -24,22 +30,22 @@ export default class Container extends React.Component {
           <Route path="/" exact={true}>           
         <div className="boxs">
         <Link to="/projects">
-          <Box title="Projetos" img={Projet}  />
+          <Box title="Projetos" img={Project}  />
         </Link>
         <Link to="/opensource">
-          <Box title="OpenSource" img={Git} />
+          <Box title="OpenSource" img={Open} />
         </Link>
         <Link to="/tutorials">
-          <Box title="Tutoriais" img={Onion} />
+          <Box title="Tutoriais" img={Tutor} />
         </Link>
         <Link to="/contact">
-          <Box title="Contato" img={Onion} />
+          <Box title="Contato" img={Contato} />
         </Link>
         <Link to="/about">
-          <Box title="Sobre" img={Onion} />
+          <Box title="Sobre" img={Sobre} />
         </Link>
-        <Link to="/">
-          <Box title="Projetos" img={Onion} />
+        <Link to="/hacks">
+          <Box title="Hacks" img={Hacks} />
         </Link>         
           <div className="relva">
             <img src={Relva} alt="grama" className="grama" />
@@ -60,6 +66,9 @@ export default class Container extends React.Component {
           </Route>
           <Route path="/tutorials">
          <Tutorials/>
+          </Route>
+          <Route path="/hacks">
+         <Hack/>
           </Route>
         </Switch>
         

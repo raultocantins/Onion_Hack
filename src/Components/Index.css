@@ -1,7 +1,7 @@
 .container{
     background-color: #000;
-    height: 100%;
-    max-height: 130%;    
+    height: 100vh;
+    min-height: 100vh;
     color: #fff;
  
 }
@@ -48,16 +48,64 @@
     width: 100%;
     overflow: hidden;
     height: 100px;
+    animation-name: loop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .grama{
     height: 100%;
     width: 100%;
+
+}
+.grama:hover{
+    animation-name: loop;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
 }
 .appbar-title{
     margin-left: 50px;
 }
-@media(max-width:600px){
+.rdw-editor-toolbar{
+font-family: Roboto;
+padding: 6px 5px 0;
+border-radius: 2px;
+border: 1px solid #F1F1F1;
+display: flex;
+justify-content: flex-start;
+background: white;
+flex-wrap: wrap;
+font-size: 15px;
+margin-bottom: 5px;
+user-select: none;
+visibility: visible;
+width: 100%;
+}
+.container-editor{
+   background-color: RED;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+}
+.demo-editor-wrapper{
+    height: 400px;
+background-color: yellowgreen;
+}
+
+@media(max-width:1300px){
     .boxs{
         max-width: 90%;
+        min-height: 520px;
+        height: auto;
     }
+    .container{ 
+        height: auto;
+        min-height: 100vh;
+        color: #fff;
+     
+    }
+
 }
